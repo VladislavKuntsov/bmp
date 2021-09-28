@@ -1,0 +1,132 @@
+.gender-select {
+    width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  340px 300px 285px 355px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "slider slider women men"
+        "slider slider accessories accessories";
+    
+
+    .slider, .women, .men, .accessories {
+        & span {
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #FFFFFF;
+            border-radius: 4px;
+            padding: 13px 24px;
+        }   
+    }
+
+    .slider {
+        grid-area: slider;
+        margin: 30px 15px 0 85px;
+        background-image: url(../../Images/Gender-select/slider.jpg);
+        background-repeat: no-repeat;
+        width: 540px;
+        height: 490px;
+        text-align: center;
+
+        span {
+            font-size: 22px;
+            line-height: 490px;
+        }
+    }
+
+    .women {
+        grid-area: women;
+        margin: 30px 15px 15px 15px;
+        background-image: url(../../Images/Gender-select/women.jpg);
+        text-align: center;
+
+        span {
+            line-height: 200px;
+        }
+    }
+
+    .men{
+        grid-area: men;
+        margin: 30px 85px 15px 15px;
+        margin-right: 85px;
+        background-image: url(../../Images/Gender-select/men.jpg);
+        text-align: center;
+
+        span {
+            line-height: 200px;
+        }
+    }
+
+    .accessories{
+        grid-area: accessories;
+        margin: 15px 85px 0 15px;
+        margin-right: 85px;
+        background-image: url(../../Images/Gender-select/accessories.jpg);
+        text-align: center;
+
+        span {
+            line-height: 260px;
+        }
+    }
+
+    .advantage {
+        width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        border-bottom: solid #F8F8F8;
+        
+        .car, .return, .support {
+            position: relative;
+            margin: 35px 0 32px 0;
+            width: 302px;
+        }
+    
+        .car {
+            margin-left: 133px;
+    
+            &:before {
+                position: absolute;            
+                content: url(../../Images/Gender-select/car.svg);
+                top: 8.33px;
+                left: -40px;
+            } 
+        }
+    
+        .return {
+            &:before {
+                position: absolute;            
+                content: url(../../Images/Gender-select/return.svg);
+                top: 6.66px;
+                left: -36.67px;
+            } 
+        }
+    
+        .support {
+           margin-right: 86px; 
+    
+            &:before {
+                position: absolute;            
+                content: url(../../Images/Gender-select/support.svg);
+                top: 5px;
+                left: -40px;
+            } 
+        }
+    
+        .title {
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 13px;
+            margin-bottom: 4px;
+        }
+    
+        .text {
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 22px;
+            opacity: .9;
+            letter-spacing: 0.04em;
+        }
+    }
+}

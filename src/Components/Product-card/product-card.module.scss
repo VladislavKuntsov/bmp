@@ -1,0 +1,53 @@
+.product-card {
+  width: 255px;
+  height: 378px;
+
+  .img {
+    width: 255px;
+    height: 318px;
+  }
+
+  .preview-information {
+    height: 60px;
+    position: relative;
+
+    .title {
+      font-size: 14px;
+      line-height: 16px;
+      opacity: 0.6;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+
+    }
+
+    .previous-price {
+      text-decoration: line-through;
+      margin-left: 4px;
+      font-size: 12px;
+      line-height: 13px;
+      opacity: 0.4;
+      font-weight: 700;
+    }
+
+    .stars {
+      position: absolute;
+      top: 19px;
+      right: 0px;
+
+      ul > li {
+        margin-right: 3px;
+      }
+
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}

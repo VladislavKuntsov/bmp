@@ -1,0 +1,89 @@
+.menu {
+    width: 1280px;
+    height: 66px; 
+    margin: 0 auto;
+    padding: 0 89px 0 85px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #F8F8F8;
+
+    .brend-name {
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        font-size: 36px;
+    }
+
+    .navigation {
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+        li {
+            line-height: 66px;
+            cursor: pointer;
+            list-style-type: none; 
+            letter-spacing: 0.095em;
+        }
+
+        li:nth-child(-n + 6) {
+            margin-right: 32px;
+        }
+    }
+
+    .user-block {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 24px;
+
+        .search, .world, .account, .basket {
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+            &:nth-child(n+2) {
+                margin-left: 30px;
+            }   
+        }
+        
+        .search {
+            background-image: url(../../Images/Menu/search.svg);
+            width: 18px;
+            height: 18px;
+        }
+
+        .world {
+            background-image: url(../../Images/Menu/world.svg);
+            width: 18px;
+            height: 18px;
+        }
+
+        .account {
+            background-image: url(../../Images/Menu/account.svg);
+            width: 14px;
+            height: 18px;
+        }
+
+        .basket{
+            position: relative;
+            background: url(../../Images/Menu/basket.svg);
+            width: 16px;
+            height: 18px;
+
+            .number-goods {
+                position: absolute;
+                top: -5px;
+                right: -6px;
+                font-weight: bold;
+                font-size: 9px;
+                line-height: 18px;
+                text-align: center;
+                color: #FFFFFF;
+                background: url(../../Images/Menu/basket-count.svg);
+                width: 16px;
+                height: 16px;
+            }            
+        }
+    }
+}

@@ -1,0 +1,87 @@
+$color-text-white: #FFFFFF;
+
+.header {
+    margin: 0 auto;
+    padding: 0 85px 0 107px;
+    width: 1280px;
+    height: 24px; 
+    background: rgba(18, 18, 18, 1);
+    font-size: 11px;
+    color: $color-text-white;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .header__contact {
+        opacity: 0.8;
+
+        .call, .location, .working-hours {
+            position: relative;
+        }
+
+        .call, .location {
+            margin-right:46px ;
+        }
+
+        .call:before {
+            position: absolute;
+            content: url(../../Images/Header/phone.svg);
+            top: 0px;
+            left: -20px;  
+        } 
+
+        .location:before {
+            position: absolute;
+            content: url(../../Images/Header/location.svg);
+            top: 0px;
+            left: -20px;  
+        }
+
+        .working-hours:before {
+            position: absolute;
+            content: url(../../Images/Header/clock.svg);
+            top: 0px;
+            left: -20px;  
+        } 
+    }
+
+    .header__social {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        .facebook, .twitter, .instagram, .pinterest {
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        }
+
+        .facebook, .twitter, .instagram {
+            margin-right: 12px;
+        }
+
+        .facebook {
+            background-image: url(../../Images/Icon/facebook.svg);
+            width: 14px;
+            height: 14px;
+        }
+
+        .twitter {
+            background-image: url(../../Images/Icon/twitter.svg);
+            width: 14px;
+            height: 12px;
+        }
+
+        .instagram {
+            background-image: url(../../Images/Icon/instagram.svg);
+            width: 12px;
+            height: 12px;
+        }
+
+        .pinterest {
+            background-image: url(../../Images/Icon/pinterest.svg);
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
