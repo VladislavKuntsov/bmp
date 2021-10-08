@@ -2,6 +2,8 @@ import React from "react";
 
 import classesBaners from "./banners.module.scss";
 
+// Hello World
+
 const Banners = () => (
         <div className={classesBaners.banners}>
             <div className={classesBaners["season-sale"]}>

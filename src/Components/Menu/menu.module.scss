@@ -63,6 +63,12 @@
             background-image: url(../../Images/Menu/account.svg);
             width: 14px;
             height: 18px;
+
+            a {
+                display: block;
+                width: 14px;
+                height: 18px;
+            }
         }
 
         .basket{

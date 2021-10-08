@@ -4,24 +4,41 @@
 $color-text-black: #121212;
 $color-background:  #E5E5E5;
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
 
 html {
+/*   margin: 0; */
   box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
   font-style: normal;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.06em;
+  font-size: 14px;
+  font-weight: normal;
+  /* letter-spacing: 0.06em; */
   color: $color-text-black;
-  background: $color-background;
+  /* background: $color-background; */
 }
 
 body {
   background: #FFFFFF;
-  width: 1280px;
+  /* width: 1280px; */
   margin: 0 auto;
   min-width: 320px;
   max-width: 1920px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* #root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */

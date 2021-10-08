@@ -1,68 +1,62 @@
+.bl-sign-in {
+  padding: 100px 0;
+}
+
 .sign-in {
   margin: 0 auto;
   width: 388px;
-  background: #ffffff;
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
   box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07), 0px 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198),
     0px 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275), 0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035),
     0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725), 0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
-  background: #FFFFFF;
   font-family: 'Spartan';
   font-style: normal;
   font-weight: normal;
-
-  & label {
-    display: block;
-  }
   
-  .sign-in__header {
+  .header {
     background-color: #121212;
-    padding: 13px 24px 13px 24px;
+    padding: 13px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    span {
+    .title {
       font-weight: 600;
-      font-size: 14px;
-      line-height: 22px;
-      letter-spacing: 0.06em;
       color: white;
     }
 
     .close {
-      display: inline;
+      background-image: url(../../Images/Sign-in/close.svg);
       width: 14px;
-      height: 14px;
-      background-image: url(../../Images/Icon/close-sign-in.svg);
+      height: 14px;      
       opacity: 0.6;
       cursor: pointer;
-      margin-right: 6px;
     }
   }
 
-  .sign-in__lead {
-    padding: 24px 29px 24px 30px;
+  .lead {
+    padding: 24px 28px;
   }
   
-  .sign-in__form {
-    margin:0 24px 0 24px;
-    
+  .form {
+    padding: 0 24px;
+
+    & label {
+      display: block;
+    }
 
     input:-webkit-autofill {
       box-shadow: 0 0 0 30px #F8F8F8 inset !important;
     }
 
-    .input-field {
+    .input-field, .input-create {
       margin-bottom: 32px;
-      font-family: inherit;
-      color: #262626;
-      box-sizing: border-box;
+      width: 340px;
     }
-
-    .input-field > div {
+    
+    .input-title-email, .input-title-password {
       font-weight: 600;
       font-size: 12px;
       line-height: 18px;
@@ -70,11 +64,21 @@
       margin-bottom: 8px;
     }
 
+    .input-title-password {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > div:nth-child(2) {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 18px;
+        opacity: 0.6;
+      }
+    }
+
     .input-field > input {
-      
       font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
       outline: none;
       border: 0px solid #F8F8F8;
       background: #F8F8F8 !important;
@@ -98,39 +102,52 @@
     }
 
     .input-create {
-      width: 340px;
-      margin-bottom: 32px;
+      
 
       & > input {
         width: 340px;
         height: 48px;
         background: #121212;
         border-radius: 4px;
-        border: #1890ff;
         font-weight: 500;
         font-size: 13px;
         line-height: 15px;
         letter-spacing: 0.06em;
-        opacity: 0.9;
         color: white;
         cursor: pointer;
+
       }
     }
   }
   
-  .sign-in__or {
+  .or {
+    position: relative;
     text-align: center;
     margin-bottom: 24px;
+
+    &::before {
+      position: absolute;
+      content: url('../../Images/Sign-in/separator.svg');
+      top: -1px;
+      left: 24px;
+    }
+
+    &::after {
+      position: absolute;
+      content: url('../../Images/Sign-in/separator.svg');
+      top: -1px;
+      right: 24px;
+    }
   }
 
-  .sign-in__f-g-a {
+  .f-g-a {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 0 110px 114px 110px;
 
-    .sign-in__facebook{
+    .facebook {
       width: 36px;
       height: 36px;
       background: url(../../Images/Icon/facebook-sign-in.svg);
@@ -138,7 +155,7 @@
       cursor: pointer;
     }
 
-    .sign-in__google {
+    .google {
       width: 32px; 
       height: 34px; 
       background: url(../../Images/Icon/google-sign-in.svg);
@@ -146,7 +163,7 @@
       cursor: pointer;
     }
 
-    .sign-in__apple {
+    .apple {
       width: 28px; 
       height: 34px; 
       background: url(../../Images/Icon/apple-sign-in.svg);
@@ -168,7 +185,7 @@
     }
   }
 
-  .sign-in__new-customer {
+  .new-customer {
     margin: 0 auto 16px auto;
     text-align: center;
     font-size: 14px;
@@ -176,7 +193,7 @@
     cursor: pointer;
   }
 
-  .sign-in__create-account {
+  .create-account {
     margin: 0 auto 24px auto;
     width: 340px;
     height: 48px;
@@ -189,7 +206,7 @@
       font-weight: 500;
       font-size: 13px;
       letter-spacing: 0.06em;
-      opacity: 0.9;
+      opacity: .9;
     }
   }
 }
