@@ -15,30 +15,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html {
-/*   margin: 0; */
   box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
   font-style: normal;
   font-size: 14px;
   font-weight: normal;
-  /* letter-spacing: 0.06em; */
   color: $color-text-black;
-  /* background: $color-background; */
 }
 
 body {
   background: #FFFFFF;
-  /* width: 1280px; */
   margin: 0 auto;
   min-width: 320px;
   max-width: 1920px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* #root {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */

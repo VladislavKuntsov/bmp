@@ -1,5 +1,5 @@
 import React from "react";
-
+import {nanoid} from "nanoid"
 import ProductCard from "../Product-card/product-card";
 
 import classesProductList from "./product-list.module.scss";
@@ -22,7 +22,7 @@ const ProductList = () => {
             </div>
             <div className={classesProductList.product}>
                 {productArr.map(()=> (
-                    <ProductCard/>
+                        <ProductCard key={nanoid(4)}/>    
                 ))}
             </div>
             <div className={classesProductList.more}>

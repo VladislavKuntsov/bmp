@@ -39,7 +39,7 @@ const GenderSelect = () => {
             </div>
             <div className={classesGenderSelect.advantage}>
                 {advantageObj.map(({title, text, classAdvantage}) => (
-                    <div className={classesGenderSelect[`${classAdvantage}`]}>
+                    <div className={classesGenderSelect[`${classAdvantage}`]} key={title}>
                         <div className={classesGenderSelect["advantage-item"]}/>
                         <div className={classesGenderSelect.title}>{title}</div>
                         <div className={classesGenderSelect.text}>{text}</div>                    

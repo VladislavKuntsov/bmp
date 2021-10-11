@@ -33,7 +33,7 @@ const BlogPreview = () => {
             </div>
             <div>
                 {dataBlogPrewiew.map(({title, text, img}) => (
-                    <div className={classesBlogPreview.preview}>
+                    <div className={classesBlogPreview.preview} key={title}>
                         <img className={classesBlogPreview.img} src={img} alt=""/>
                         <div className={classesBlogPreview.information}>
                             <div className={classesBlogPreview.title}>{title}<br/></div>
